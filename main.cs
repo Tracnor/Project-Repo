@@ -24,15 +24,23 @@ class Program
             {
                 case 1:
                     Character.Specialty = "Engineer";
+                    Character.Health = 100;
+                    Character.Stamina = 100;
                     break;
                 case 2:
                     Character.Specialty = "Scientist";
+                    Character.Health = 100;
+                    Character.Stamina = 100;
                     break;
                 case 3:
                     Character.Specialty = "Soldier";
+                    Character.Health = 200;
+                    Character.Stamina = 200;
                     break;
                 case 4:
                     Character.Specialty = "Medic";
+                    Character.Health = 100;
+                    Character.Stamina = 100;
                     break;
                 default:
                     Console.WriteLine("U fookin wot m8?");
