@@ -18,9 +18,12 @@ class Program
             Console.WriteLine("2: Scientist");
             Console.WriteLine("3: Soldier");
             Console.WriteLine("4: Medic");
-            int characterClass = Convert.ToInt16(Console.ReadLine());
-
-            switch (characterClass)
+            int characterClassInt;
+            string characterClassString;
+            characterClassString = Console.ReadLine();
+            characterClassInt= Convert.ToInt16(characterClassString);
+            
+            switch (characterClassInt)
             {
                 case 1:
                     Character.Specialty = "Engineer";
@@ -43,7 +46,7 @@ class Program
                     Character.Stamina = 100;
                     break;
                 default:
-                    Console.WriteLine("U fookin wot m8?");
+                    Console.WriteLine("U fookin wot m8?");              
                     break;
             }
             Console.WriteLine("Your character's specialty is: " + Character.Specialty);
